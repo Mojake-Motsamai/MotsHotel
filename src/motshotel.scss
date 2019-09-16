@@ -1,0 +1,22 @@
+@import '~@angular/material/theming';
+
+@include mat-core();
+
+$motshotel-primary: mat-palette($mat-teal, 200);
+$motshotel-accent: mat-palette($mat-teal, 50);
+
+$motshotel-warn: mat-palette($mat-red);
+
+$motshotel: mat-light-theme($motshotel-primary,$motshotel-accent,$motshotel-warn);
+
+@include angular-material-theme($motshotel);
+
+
+
+
+
+
+.navtabs-container {
+    background-color: mat-color($motshotel-accent)
+}
+
